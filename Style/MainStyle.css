@@ -18,7 +18,7 @@ header{
   display: flex;
   justify-content: center;
 }
-.dws-menu > ul li .SILKA{
+.dws-menu > ul li .mainHref{
   display: block;
   background:  #ececed; /*Это бэкграунд меню*/
   padding: 15px 30px 15px 30px;
@@ -38,7 +38,7 @@ header{
 .dws-menu > ul li:last-child{
   border-right: 1px solid #454547; /*Линия в конце меню*/
 }
-.dws-menu li .SILKA:hover{
+.dws-menu li .mainHref:hover{
   background: #454547; /*Заполнение кнопок при наведении "Темно серый цвет"*/
   color: #ffffffff; /*Цвет букв в меню*/
   box-shadow: 1px 5px 10px -5px black; /*Тень и ее стиль*/
@@ -54,7 +54,7 @@ header{
 .dws-menu li > ul li{
   border: 1px solid #c7c8ca; /*Окнантовка подменю*/
 }
-.dws-menu li > ul li .SILKA{
+.dws-menu li > ul li .mainHref{
   padding: 10px;
   text-transform: none;
   background: #e4e4e5;
