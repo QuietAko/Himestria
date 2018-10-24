@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body>
+	<div class="move-wrap">
+		<div class="block">
+			<div class="corners c_0" data-x=""></div>
+			<div class="corners c_1" data-x=""></div>
+			<div class="corners c_2" data-x=""></div>
+			<div class="corners c_3" data-x=""></div>
+			<div class="corners c_4" data-x=""></div>
+			<div class="corners c_5" data-x=""></div>
+			<div class="corners c_6" data-x=""></div>
+			<div class="corners c_7" data-x=""></div>
+	</div>
+		
+	</div>
+<h1 style="position: absolute; top: 500px;"></h1>
+</body>
+</html>
+<script type="text/javascript">
+
+		var mouseX, mouseY, limitX = 500, limitY = 500;
+
+
+function resizble(l, t, wrap) {
+
+		$(window).mousemove(function(e){
+        		var offset = $("." + wrap).offset();
+
+        		mouseX = Math.floor(Math.min(e.pageX - offset.left, limitX));
+        		mouseY = Math.floor(Math.min(e.pageY - offset.top, limitY));
+
+        		var pX = Math.floor((mouseX / limitX) * 100);
+        		var pY = Math.floor((mouseY / limitY) * 100);
+        		var w = tor($("." + wrap).css('width'));
+        		var h = tor($("." + wrap).css('height'));
+
+        		$('h1').html(pX + " " + pY)
+
+        		$(".block").css({
+    				'width':  mouseX + "%",
+    				'height': mouseY + "%"
+    			});
+    	});
+}
+	
+
+	function tor(v){
+		var temp = [];
+		var exit = '';
+		for(var i = 0; i <= v.length - 3; i++){
+			temp.push(v[i]);
+		}
+		for (var i = 0; i < temp.length; i++) {
+			exit += temp[i];
+		}
+		return parseInt(exit);
+	}
+
+    jQuery(document).ready(function($) {
+
+ 	
+ 	$(".corners").mousedown(function(event) {
+ 		var l = $(this).css('left');
+ 		var t = $(this).css('top');
+
+			resizble(tor(l), tor(t), "block");
+		});
+ 	$(".corners").mouseup(function(event) {
+ 		console.log('up')
+ 	});
+
+
+    	
+    });
+</script>
+<style type="text/css">
+	.block{
+		position: absolute;
+			width: 100px;
+			height: 100px;
+		border-style: dashed;
+		border-color: blue;
+	}
+	.corners{
+		position: absolute;
+			width: 10px;
+			height: 10px;
+			background-color: green;
+	}
+
+.c_0{
+	top: 0%;
+	left: 0%;
+}
+.c_1{
+	top: 0%;
+	left: 50%;
+}
+.c_2{
+	top: 0%;
+	left: 100%;
+}
+.c_3{
+	top: 50%;
+	left: 100%;
+}
+.c_4{
+	top: 100%;
+	left: 100%;
+}
+.c_5{
+	top: 100%;
+	left: 50%
+}
+.c_6{
+	top: 100%;
+	left: 0%;
+}
+.c_7{
+	top: 50%;
+	left: 0%;
+}
+</style>
