@@ -49,7 +49,7 @@ input.toggleSubmenu:checked ~ ul{
   cursor: pointer;
   display: block;
 }
-input.toggleSubmenu:checked ~ .SILKA{
+input.toggleSubmenu:checked ~ .mainHref{
   background: #454547;
   color: #fff;
 }
