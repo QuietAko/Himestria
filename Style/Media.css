@@ -1,0 +1,56 @@
+.dws-menu [type="checkbox"],
+.dws-menu label.toggleSubmenu{
+  display: none;
+}
+.dws-menu label.toggleMenu{
+  background: #c9c9c9;
+  display: none;
+  padding: 15px 40px;
+  font-size: 14px;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+}
+@media all and (max-width: 800px) {
+.dws-menu{
+  overflow: hidden;
+}
+.dws-menu ul{
+  display: block;
+  max-height: 0;
+  transition: max-height 1.2s;
+}
+
+.dws-menu li > ul li ul{
+  position: absolute;
+  right: auto;
+  top: auto;
+}
+.dws-menu label.toggleMenu{
+  display: block;
+}
+input.toggleMenu:checked + label.toggleMenu{
+  background: #000;
+  color: #fff;
+}
+input.toggleMenu:checked ~ ul,
+input.toggleSubmenu:checked ~ ul{
+  display: block;
+  position: relative;
+  max-height: 5000px;
+  transition: max-height 2s ease-in;
+}
+.dws-menu label.toggleSubmenu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+input.toggleSubmenu:checked ~ .SILKA{
+  background: #454547;
+  color: #fff;
+}
+}
