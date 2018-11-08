@@ -21,7 +21,7 @@ header{
 .dws-menu > ul li .mainHref{
   display: block;
   background:  #ececed; /*Это бэкграунд меню*/
-  padding: 15px 30px 15px 34px;
+  padding: 15px 30px 15px 30px;
   font-size: 14px;
   color: #454547; /*Цвет букв*/
   text-decoration: none;
@@ -54,7 +54,7 @@ header{
 /*Под меню*/
 .dws-menu li  ul{
   position: absolute;
-  min-width: 160px;
+  min-width: 150px;
   display: none;
 }
 .dws-menu li > ul li{
