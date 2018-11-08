@@ -35,7 +35,7 @@ header{
 .dws-menu > ul  li > .mainHref i.fa{
   position: absolute;
   top: 13px;
-  left: 5px;
+  left: 10px;
   font-size: 18px;
 }
 .dws-menu > ul li:first-child{
