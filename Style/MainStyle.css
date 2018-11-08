@@ -21,7 +21,7 @@ header{
 .dws-menu > ul li .mainHref{
   display: block;
   background:  #ececed; /*Это бэкграунд меню*/
-  padding: 15px 30px 15px 30px;
+  padding: 15px 30px 15px 34px;
   font-size: 14px;
   color: #454547; /*Цвет букв*/
   text-decoration: none;
@@ -30,29 +30,35 @@ header{
 }
 .dws-menu > ul li{
   position: relative;
-  border-right: 1px solid #c7c8ca; /*Линии между разделами меню*/
+/* border-right: 1px solid #c7c8ca; Линии между разделами меню*/
+}
+.dws-menu > ul  li > .mainHref i.fa{
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  font-size: 18px;
 }
 .dws-menu > ul li:first-child{
-  border-left: 1px solid #454547; /*Линия в начале меню*/
+  /*border-left: 1px solid #454547; Линия в начале меню*/
 }
 .dws-menu > ul li:last-child{
-  border-right: 1px solid #454547; /*Линия в конце меню*/
+  /*border-right: 1px solid #454547; Линия в конце меню*/
 }
 .dws-menu li .mainHref:hover{
-  background: #454547; /*Заполнение кнопок при наведении "Темно серый цвет"*/
+  background: #81b931; /*Заполнение кнопок при наведении "Темно серый цвет"*/
   color: #ffffffff; /*Цвет букв в меню*/
   box-shadow: 1px 5px 10px -5px black; /*Тень и ее стиль*/
   transition: all 0.3s ease;
 }
 
 /*Под меню*/
-.dws-menu li ul{
+.dws-menu li  ul{
   position: absolute;
-  min-width: 150px;
+  min-width: 160px;
   display: none;
 }
 .dws-menu li > ul li{
-  border: 1px solid #c7c8ca; /*Окнантовка подменю*/
+   /*border: 1px solid #c7c8ca; Окнантовка подменю*/
 }
 .dws-menu li > ul li .mainHref{
   padding: 10px;
@@ -66,4 +72,7 @@ header{
 }
 .dws-menu li:hover > ul{
   display: block;
+}
+.fa-file-word{
+  color: #81b931;
 }
