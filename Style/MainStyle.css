@@ -21,7 +21,7 @@ header{
 .dws-menu > ul li .mainHref{
   display: block;
   background:  #ececed; /*Это бэкграунд меню*/
-  padding: 15px 30px 15px 30px;
+  padding: 15px 30px 15px 34px;
   font-size: 14px;
   color: #454547; /*Цвет букв*/
   text-decoration: none;
