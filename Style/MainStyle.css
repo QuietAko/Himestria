@@ -76,3 +76,42 @@ header{
 .fa-file-word{
   color: #81b931;
 }
+
+.BittlyHref {
+  display: inline-block;
+  position: relative;
+  color: #333333;
+  text-decoration: none;
+  padding: 0.2em 0.05em;
+  border-bottom: 2px solid #333333;
+  left: 50px;
+}
+
+.BittlyHref:hover {
+  color: #efefef;
+}
+
+.BittlyHref:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #81b931;
+  z-index: -1;
+  transition: all 0.1s cubic-bezier(0.000, 0.590, 1.000, 0.260);
+}
+
+.BittlyHref:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #81b931;
+  z-index: -1;
+}
