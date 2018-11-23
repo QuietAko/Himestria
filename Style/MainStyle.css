@@ -21,8 +21,8 @@ header{
 .dws-menu > ul li .mainHref{
   display: block;
   background:  #ececed; /*Это бэкграунд меню*/
-  padding: 15px 30px 15px 34px;
-  font-size: 14px;
+  padding: 14.5px 35px 15px 34px;
+  font-size: 15px;
   color: #454547; /*Цвет букв*/
   text-decoration: none;
   text-transform: uppercase;
@@ -73,18 +73,21 @@ header{
 .dws-menu li:hover > ul{
   display: block;
 }
-.fa-file-word{
-  color: #81b931;
+.fa-file-word, .fa-file-powerpoint{
+  color: #7062fc;
+  padding: 10px;
+}
+.fa-file-powerpoint{
+  color: rgb(230, 66, 45);
 }
 
 .BittlyHref {
   display: inline-block;
   position: relative;
-  color: #333333;
+  color: #7062fc;
   text-decoration: none;
   padding: 0.2em 0.05em;
-  border-bottom: 2px solid #333333;
-  left: 50px;
+  border-bottom: 2px solid #81b931;
 }
 
 .BittlyHref:hover {
@@ -114,4 +117,12 @@ header{
   left: 0;
   background: #81b931;
   z-index: -1;
+}
+#Hrefs{
+  position: absolute;
+  margin: 0;
+  left: 150px;
+  bottom: 300px;
+  font-size: 16px;
+  font-family:Philosopher, arial;
 }

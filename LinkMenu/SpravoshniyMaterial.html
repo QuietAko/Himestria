@@ -8,6 +8,7 @@
     <link href="http://allfont.ru/allfont.css?fonts=roboto-thin" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/Icons\fontawesome-free-5.5.0-web\css/all.css">
     <script src="/Js/OwnJs.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
     <link rel="stylesheet" href="/Style/Media.css">
     <title>Химестрия</title>
   </head>
@@ -94,11 +95,22 @@
         </ul>
       </nav>
   </header>
-  <span>
-    <a class="BittlyHref" target="_blank" href="http://bit.ly/Valentnost_doc">Валентность.doc</a> <i class="fa fa-file-word fa-2x"></i>
+  <span id="Hrefs">
+    <a target="_blank" href="http://bit.ly/Valentnost_doc" class="BittlyHref">Валентность.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
+    <a target="_blank" href="http://bit.ly/NeorganicheskieSoedin" class="BittlyHref">Неорганические соединения.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
+    <a target="_blank" href="http://bit.ly/StepenOkisleniaDOC" class="BittlyHref">Степень окисления.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
+    <a target="_blank" href="http://bit.ly/StroenieAtomaDoc" class="BittlyHref">Строение атома.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
+    <a target="_blank" href="http://bit.ly/TablisaReaksiDoc" class="BittlyHref">Таблица реакций.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
+    <a target="_blank" href="http://bit.ly/HimisheskaiSvzi" class="BittlyHref">Химическая связь.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
+    <a target="_blank" href="http://bit.ly/XimicheskaiVectorina" class="BittlyHref">Химическая Викторина</a> <i class="fa fa-file-powerpoint fa-2x"></i>
   </span>
   </body>
 </html>
+
+
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/0.288.2/mo.min.js" charset="utf-8"></script>
 <script type="text/javascript">
 const links = document.querySelectorAll('.BittlyHref');
@@ -133,7 +145,7 @@ function shootLines(e) {
 
     children: {
       shape: shapes[chosenS],
-      radius:9,
+      radius:8,
       scale: {0.8: 1},
       fill: 'none',
       points: 8,
