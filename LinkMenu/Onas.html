@@ -7,8 +7,7 @@
     <meta charset="utf-8"> <link rel="stylesheet" href="/Style/MainStyle.css">
     <link href="http://allfont.ru/allfont.css?fonts=roboto-thin" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/Icons\fontawesome-free-5.5.0-web\css/all.css">
-    <script src="/Js/OwnJs.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <script src="/Js/OwnJs.js" defer></script>
     <link rel="stylesheet" href="/Style/Media.css">
     <title>Химестрия</title>
   </head>
@@ -23,10 +22,9 @@
           <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
           <a class="mainHref" href="/"><i class="fa fa-home"></i>Главная</a>
           <label for="sub_m1"class="toggleSubmenu"></label>
-
       <ul>
         <li>
-          <a class="mainHref" href="#">О нас</a></li>
+          <a class="mainHref" href="/LinkMenu/Onas.html">О нас</a></li>
           <li><a class="mainHref" href="/LinkMenu/SaitAbout.html">О сайте</a></li>
           <li><a class="mainHref" href="#">Пожертвовать</a></li>
       </ul>
@@ -95,70 +93,12 @@
         </ul>
       </nav>
   </header>
-  <span id="Hrefs">
-    <a target="_blank" href="http://bit.ly/Valentnost_doc" class="BittlyHref">Валентность.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
-    <a target="_blank" href="http://bit.ly/NeorganicheskieSoedin" class="BittlyHref">Неорганические соединения.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
-    <a target="_blank" href="http://bit.ly/StepenOkisleniaDOC" class="BittlyHref">Степень окисления.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
-    <a target="_blank" href="http://bit.ly/StroenieAtomaDoc" class="BittlyHref">Строение атома.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
-    <a target="_blank" href="http://bit.ly/TablisaReaksiDoc" class="BittlyHref">Таблица реакций.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
-    <a target="_blank" href="http://bit.ly/HimisheskaiSvzi" class="BittlyHref">Химическая связь.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
-    <a target="_blank" href="http://bit.ly/XimicheskaiVectorina" class="BittlyHref">Химическая Викторина</a> <i class="fa fa-file-powerpoint fa-2x"></i>
+  <span>
+    <div>
+      <img class="Ava" src="../Hel.png" alt="">
+      <img class="Ava" src="../Hel.png" alt="">
+      <img class="Ava" src="../Hel.png" alt="">
+    </div>
   </span>
   </body>
 </html>
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/0.288.2/mo.min.js" charset="utf-8"></script>
-<script type="text/javascript">
-const links = document.querySelectorAll('.BittlyHref');
-
-links.forEach(link => link.addEventListener('mouseenter', shootLines));
-
-function shootLines(e) {
-
-  const itemDim = this.getBoundingClientRect(),
-        itemSize = {
-          x: itemDim.right - itemDim.left,
-          y: itemDim.bottom - itemDim.top,
-        },
-        shapes = ['line', 'zigzag', 'circle'],
-        colors = ['#2FB5F3',
-                  '#FF0A47',
-                  '#FF0AC2',
-                  '#47FF0A',
-                  '#0db4f4',
-                  '#29e3a1'];
-
-  const chosenC = Math.floor(Math.random() * colors.length),
-        chosenS = Math.floor(Math.random() * shapes.length);
-
-  // create shape
-  const burst = new mojs.Burst({
-    left: itemDim.left + (itemSize.x/2),
-    top: itemDim.top + (itemSize.y/2),
-    radiusX: itemSize.x,
-    radiusY: itemSize.y,
-    count: 8,
-
-    children: {
-      shape: shapes[chosenS],
-      radius:8,
-      scale: {0.8: 1},
-      fill: 'none',
-      points: 8,
-      stroke: colors[chosenC],
-      strokeDasharray: '100%',
-      strokeDashoffset: { '-100%' : '100%' },
-      duration: 350,
-      delay: 100,
-      easing: 'quad.out',
-      isShowEnd: false,
-    }
-  });
-
-  burst.play();
-}
-</script>
