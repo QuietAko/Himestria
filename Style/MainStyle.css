@@ -86,7 +86,7 @@ header{
   position: relative;
   color: #7062fc;
   text-decoration: none;
-  padding: 0.2em 0.05em;
+  padding: 0.2px 0.05px;
   border-bottom: 2px solid #81b931;
 }
 
@@ -118,13 +118,13 @@ header{
   background: #81b931;
   z-index: -1;
 }
-#Hrefs{
+.Hrefs{
   position: absolute;
   margin: 0;
-  left: 150px;
-  bottom: 300px;
+  left: 100px;
+  top: 65px;
   font-size: 16px;
-  font-family:Philosopher, arial;
+  font-family: Philosopher, arial;
 }
 .Ava{
   width: 300px;
