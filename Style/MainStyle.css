@@ -133,4 +133,5 @@ header{
   left: 200px;
   top: 100px;
   padding: 0 50px;
+  z-index: -11;
 }
