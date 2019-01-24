@@ -1,0 +1,174 @@
+﻿body {
+    font-family: 'Proxima Nova', 'Helvetica', 'Corbel', sans-serif;
+    font-size: 12pt;
+    color: #444444;
+}
+
+#main {
+    margin: 40px auto;
+    padding: 10px 20px;
+    width: 600px;
+}
+
+#secondary {
+    margin: 20px auto;
+    width: 1000px;
+}
+
+#secondary i {
+    font-weight: bold;
+}
+
+#secondary strong {
+    font-style: italic;
+}
+
+section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #888888;
+}
+
+.home-link {
+    text-align: center;
+    margin-top: 2em;   /* в два раза больше, чем текущая высота шрифта */
+}
+
+a {    
+    text-decoration: none;
+}
+
+a:hover {    
+    text-decoration: underline;
+}
+
+.prog a {
+    color: #49a46c;
+}
+
+.prog a:hover {
+    color: #86dba7;
+}
+
+.chemistry a {
+    color: #a349a4;
+}
+
+.chemistry a:hover {
+    color: #da86db;
+}
+
+footer {
+    text-align: right;
+}
+
+#myCanvas {
+    display: block;
+    margin: 0 auto;    
+    border: 1px solid #888888;
+}
+
+#header_icon {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    bottom: 6px;
+}
+
+#liveinternet_logo {
+    float: left;
+}
+
+table, th, td {
+    padding: 10px;
+    border: 1px solid #222222;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    font-weight: bold;
+}
+
+td p {
+    margin-top: 0;
+}
+
+.header {
+    text-align: center;
+}
+
+.monospace {
+    font-family: 'Courier New', 'Courier', 'PT Mono', 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+}
+
+pre {
+    margin-bottom: -1.00em;
+}
+
+.tab { 
+    margin-left: 40px; 
+}
+
+.standout {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#task {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+    border: 1px solid #adadad;
+}
+
+#answer {
+    width: 258px;
+    height: 28px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 1em;
+}
+
+#check {
+    width: 280px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 1em;
+}
+
+#check.grey {
+    color: #444;
+    background-color: #e1e1e1;
+    border: 1px solid #adadad;
+}
+
+#check.grey:disabled {
+    color: #6d6d6d;
+    background-color: #cccccc;
+    border: 1px solid #bfbfbf;
+}
+
+#check.green {
+    color: #fff;
+    background-color: #399d3f;
+    border: 1px solid #276b2b;
+}
+
+#check.red {
+    color: #fff;
+    background-color: #9d3939;
+    border: 1px solid #6b2727;
+}
+
+#message {
+    display: none;
+    color: #666;
+    font-size: 11pt;
+    margin: 0 10px;
+}
