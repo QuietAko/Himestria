@@ -1,0 +1,12 @@
+/*****************************
+ All rights reserved.
+ AllFont.ru (c) 2011-2015
+ *****************************/
+@font-face {
+    font-family: 'Roboto Thin';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Thin'), local('RobotoTh-Regular'),
+        url(roboto-thin_9bdd16f8c2ad5debe2020a6569490275.woff) format('woff'),
+        url(roboto-thin_9bdd16f8c2ad5debe2020a6569490275.ttf) format('truetype');
+}

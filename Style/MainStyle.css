@@ -2,10 +2,6 @@ body{
     background-image: url('/Fon.png');
 
 }
-header{
-  /*margin-top: 200px;*/
-  font-family: Roboto Thin, arial;
-}
 .dws-menu *{
   margin: 0;
   padding: 0;

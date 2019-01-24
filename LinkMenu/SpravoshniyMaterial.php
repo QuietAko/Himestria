@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="ru" dir="ltr">
-  <head>
-    <script src="/Js/jquery-3.3.1.js" defer></script>
-    <script src="/Js/OwnJs.js"></script>
-    <script src="/Js/Timere.js" charset="utf-8"></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta charset="utf-8"> <link rel="stylesheet" href="/Style/MainStyle.css">
-    <link href="http://allfont.ru/allfont.css?fonts=roboto-thin" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
-    <link rel="stylesheet" href="/Style/Media.css">
-    <title>Химестрия</title>
-  </head>
+<?php
+    require $_SERVER['DOCUMENT_ROOT'] . '/include/modules.inc.php';
+
+    echo Structure::getHeader('Главная', 'chemistry');
+    ?>
   <body>
   <header>
     <nav class="dws-menu">
@@ -25,9 +17,9 @@
 
       <ul>
         <li>
-          <a class="mainHref" href="#">О нас</a></li>
+          <a class="mainHref" href="/LinkMenu/Onas.php">О нас</a></li>
           <li><a class="mainHref" href="/LinkMenu/SaitAbout.php">О сайте</a></li>
-          <li><a class="mainHref" href="#">Пожертвовать</a></li>
+          <li><a class="mainHref" href="\LinkMenu\Money\Pozhertvovanie.php">Пожертвовать</a></li>
       </ul>
         </li>
           <li>
@@ -86,7 +78,7 @@
             <a class="mainHref" href="#"><i class="fa fa-gamepad"></i>Игры</a>
             <label for="sub_m5"class="toggleSubmenu"></label>
             <ul>
-              <li><a href="#" class="mainHref">Скачать игры</a></li>
+              <li><a href="/LinkMenu/GamesDownload.php" class="mainHref">Скачать игры</a></li>
               <li><a href="#" class="mainHref">Поиграть онлайн</a></li>
               <li><a href="#" class="mainHref">F.A.Q по играм</a></li>
             </ul>
@@ -94,7 +86,7 @@
         </ul>
       </nav>
   </header>
-  <span id="Hrefs">
+  <span class="Hrefs">
     <a target="_blank" href="http://bit.ly/Valentnost_doc" class="BittlyHref">Валентность.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
     <a target="_blank" href="http://bit.ly/NeorganicheskieSoedin" class="BittlyHref">Неорганические соединения.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
     <a target="_blank" href="http://bit.ly/StepenOkisleniaDOC" class="BittlyHref">Степень окисления.doc</a> <i class="fa fa-file-word fa-2x"></i><br>
@@ -105,11 +97,6 @@
   </span>
   </body>
 </html>
-
-
-
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/0.288.2/mo.min.js" charset="utf-8"></script>
 <script type="text/javascript">
 const links = document.querySelectorAll('.BittlyHref');
@@ -134,7 +121,7 @@ function shootLines(e) {
   const chosenC = Math.floor(Math.random() * colors.length),
         chosenS = Math.floor(Math.random() * shapes.length);
 
-  // создание формы
+  // create shape
   const burst = new mojs.Burst({
     left: itemDim.left + (itemSize.x/2),
     top: itemDim.top + (itemSize.y/2),

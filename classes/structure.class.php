@@ -14,7 +14,6 @@ return <<<EOD
 <!DOCTYPE html>
 
 <head>
-    <title>{$title}</title>
 
     <meta charset="utf-8">    
     <meta name="yandex-verification" content="778a6579fabca99f" />    
@@ -25,10 +24,15 @@ return <<<EOD
     <script src="/Js/OwnJs.js"></script>
 
     <link rel="stylesheet" href="/style.css?{$version}">
-    <link href="http://allfont.ru/allfont.css?fonts=roboto-thin" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link href="/fonts/roboto-thin.css" rel="stylesheet" type="text/css" />
+    <link href="/fonts/Philosopher.css" rel="stylesheet">
     <link rel="stylesheet" href="/Style/MainStyle.css">
     <link rel="stylesheet" href="/Style/Media.css">
+    <link rel="stylesheet" href="/Icons/fontawesome-pro-5.6.3-web/css/all.css">
+    <script src="/Js/OwnJs.js" defer></script>
+    <link rel="stylesheet" href="/Style/Media.css">
+    <link rel="shortcut icon" href="/Ico.ico" type="image/ico">
+    <title>{$title}</title>
 
     {$head}
 </head>
